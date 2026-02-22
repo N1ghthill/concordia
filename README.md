@@ -1,74 +1,38 @@
-# Arquitetura do Concórdia
+# Concórdia
 
-## Visão Geral
+> Sua comunidade não é um produto.
 
-Concórdia é estruturado como uma plataforma modular composta por:
+Concórdia é uma plataforma open-source de comunicação criada para comunidades que valorizam autonomia, privacidade e transparência.
 
-- Cliente (Web/Desktop)
-- Backend central
-- Camada de persistência
-- Sistema de extensões
-- API pública
+Não somos apenas mais um chat.
+Somos uma alternativa ética às plataformas centralizadas.
 
 ---
 
-## Componentes
+## ✨ Por que Concórdia?
 
-### Cliente
+As comunidades modernas dependem de plataformas que:
 
-Responsável por:
+- Coletam dados excessivamente
+- Impõem decisões unilaterais
+- Monetizam recursos básicos
+- Tratam usuários como métricas
 
-- Interface de canais
-- Comunicação em tempo real
-- Gestão de permissões
-- Integração com API
+Concórdia existe para mudar isso.
 
-Tecnologias podem variar conforme evolução do projeto.
+Aqui:
 
----
-
-### Backend
-
-Responsável por:
-
-- Autenticação
-- Gerenciamento de servidores e canais
-- Comunicação via WebSocket
-- Controle de permissões
-- Integração com bots
-
-Arquitetura preparada para escalabilidade horizontal.
+- O servidor pode ser seu
+- O código é auditável
+- A comunidade é soberana
+- A privacidade é padrão
 
 ---
 
-### Persistência
+## 🔥 Diferenciais
 
-- Banco relacional para dados estruturados
-- Armazenamento separado para arquivos
-- Logs auditáveis
-
----
-
-### Comunicação em Tempo Real
-
-- WebSockets para mensagens
-- WebRTC para voz (quando implementado)
-
----
-
-### Segurança
-
-- Autenticação segura
-- Controle granular de permissões
-- Estrutura preparada para criptografia ponta-a-ponta opcional
-
----
-
-## Filosofia Arquitetural
-
-- Modularidade
-- Transparência
-- Escalabilidade
-- Simplicidade antes de complexidade
-
-Concórdia prioriza clareza estrutural sobre hype tecnológico.
+- 🔓 100% open-source
+- 🏠 Self-host opcional
+- 🔐 Arquitetura focada em segurança
+- 🤖 API aberta para bots e integrações
+- 🚫 Sem monetização predatória
