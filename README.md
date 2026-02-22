@@ -1,89 +1,74 @@
-# Concórdia
+# Arquitetura do Concórdia
 
-> Concórdia — Sua comunidade não é um produto.
+## Visão Geral
 
-Concórdia é uma plataforma open-source de comunicação para comunidades que valorizam privacidade, autonomia e interoperabilidade.
+Concórdia é estruturado como uma plataforma modular composta por:
 
-## Visão e missão
+- Cliente (Web/Desktop)
+- Backend central
+- Camada de persistência
+- Sistema de extensões
+- API pública
 
-A visão do projeto é fortalecer comunidades digitais livres de vigilância e dependência de plataformas fechadas.
+---
 
-A missão é entregar uma base técnica transparente, auditável e sustentável para comunicação em tempo real, com self-host opcional e API aberta para bots.
+## Componentes
 
-## Diferenciais
+### Cliente
 
-- Privacidade por padrão, com foco em minimização de dados.
-- Transparência técnica, com arquitetura e decisões documentadas.
-- Autonomia operacional, com opção de self-host.
-- API aberta para integrações e bots sem lock-in.
-- Governança open-source orientada à comunidade.
+Responsável por:
 
-## Estado atual do projeto
+- Interface de canais
+- Comunicação em tempo real
+- Gestão de permissões
+- Integração com API
 
-Este repositório está na fase de fundação.
+Tecnologias podem variar conforme evolução do projeto.
 
-- Estrutura técnica e documental organizada.
-- Diretrizes de contribuição, segurança e governança definidas.
-- Sem código de aplicação neste momento (cliente e servidor ainda não implementados).
+---
 
-## Como rodar localmente
+### Backend
 
-No estado atual, não há serviços de aplicação para executar.
+Responsável por:
 
-1. Clone o repositório.
-2. Entre na pasta do projeto.
-3. Rode o validador de estrutura.
+- Autenticação
+- Gerenciamento de servidores e canais
+- Comunicação via WebSocket
+- Controle de permissões
+- Integração com bots
 
-```bash
-git clone https://github.com/<org>/concordia.git
-cd concordia
-bash scripts/check-structure.sh
-```
+Arquitetura preparada para escalabilidade horizontal.
 
-## Estrutura principal
+---
 
-- `docs/`: documentação técnica e de governança.
-- `assets/`: ativos de marca, arquivos fonte e pacotes de distribuição.
-- `src/`: área reservada para módulos compartilhados.
-- `server/`: área reservada para o backend.
-- `client/`: área reservada para clientes oficiais.
-- `packages/`: área reservada para pacotes reutilizáveis.
-- `docker/`: artefatos de conteinerização e orquestração.
-- `scripts/`: automações de manutenção e qualidade.
+### Persistência
 
-## Documentação
+- Banco relacional para dados estruturados
+- Armazenamento separado para arquivos
+- Logs auditáveis
 
-- `docs/README.md`
-- `docs/architecture/README.md`
-- `docs/api/README.md`
-- `docs/security/README.md`
-- `ARCHITECTURE.md`
-- `ROADMAP.md`
-- `SECURITY.md`
-- `CHANGELOG.md`
-- `VERSIONING.md`
-- `RELEASE.md`
+---
 
-## Contribuição
+### Comunicação em Tempo Real
 
-Consulte `CONTRIBUTING.md` antes de abrir issues ou pull requests.
+- WebSockets para mensagens
+- WebRTC para voz (quando implementado)
 
-Toda participação deve seguir `CODE_OF_CONDUCT.md`.
+---
 
-## Patrocínio
+### Segurança
 
-O Concórdia é um projeto open-source de interesse público e longo prazo.
+- Autenticação segura
+- Controle granular de permissões
+- Estrutura preparada para criptografia ponta-a-ponta opcional
 
-Se você quiser apoiar a continuidade técnica do projeto, use GitHub Sponsors:
+---
 
-- https://github.com/sponsors/N1ghthill
+## Filosofia Arquitetural
 
-## Licença
+- Modularidade
+- Transparência
+- Escalabilidade
+- Simplicidade antes de complexidade
 
-Este projeto é distribuído sob a licença MIT. Veja `LICENSE`.
-
-## Manifesto
-
-Comunidades merecem infraestrutura digital confiável, transparente e controlável.
-
-Concórdia existe para provar que comunicação em larga escala pode ser ética, aberta e tecnicamente rigorosa.
+Concórdia prioriza clareza estrutural sobre hype tecnológico.
