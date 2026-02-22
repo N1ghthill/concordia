@@ -1,0 +1,18 @@
+{
+  "name": "concordia-branding-pipeline",
+  "version": "1.0.0",
+  "description": "Pipeline local para gerar variacoes dos assets de marca do Concordia.",
+  "main": "rebuild-pack.mjs",
+  "scripts": {
+    "rebuild": "node rebuild-pack.mjs",
+    "derivatives": "node generate-derivatives.mjs",
+    "mobile": "node generate-mobile-icon-packages.mjs",
+    "favicon": "node generate-store-favicon.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

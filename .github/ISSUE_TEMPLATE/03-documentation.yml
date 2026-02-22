@@ -1,0 +1,35 @@
+name: Documentation improvement
+description: Reportar inconsistencias ou sugerir melhorias na documentacao.
+title: "[docs]: "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Secao afetada
+      description: Caminho do arquivo ou secao da documentacao.
+      placeholder: Ex. docs/api/README.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problema identificado
+      placeholder: O que esta confuso, incompleto ou incorreto?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Sugestao de melhoria
+      placeholder: Qual seria a versao mais clara da documentacao?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmacoes
+      options:
+        - label: Verifiquei se a sugestao nao esta duplicada em outra issue.
+          required: true
+

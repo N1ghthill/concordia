@@ -1,0 +1,31 @@
+name: Repository Health
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository structure
+        run: bash scripts/check-structure.sh
+
+      - name: Validate Markdown files
+        run: bash scripts/check-markdown.sh
+
+      - name: Validate shell script syntax
+        run: |
+          while IFS= read -r -d '' file; do
+            echo "Checking: $file"
+            bash -n "$file"
+          done < <(find scripts -type f -name '*.sh' -print0)
+

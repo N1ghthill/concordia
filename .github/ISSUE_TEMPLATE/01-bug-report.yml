@@ -1,0 +1,81 @@
+name: Bug report
+description: Reportar comportamento incorreto, regressao ou falha.
+title: "[bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por abrir um bug report no Concórdia.
+        Preencha os campos abaixo para facilitar a triagem técnica.
+  - type: input
+    id: summary
+    attributes:
+      label: Resumo do problema
+      description: Descreva o bug em uma frase objetiva.
+      placeholder: Ex. mensagens nao aparecem em tempo real em canais privados.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area impactada
+      options:
+        - Documentacao
+        - API
+        - Server
+        - Client
+        - Scripts/CI
+        - Assets/Branding
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Liste os passos em sequencia.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      placeholder: O que deveria acontecer?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento atual
+      placeholder: O que aconteceu de fato?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Informe sistema operacional, navegador e versoes relevantes.
+      placeholder: Ex. Ubuntu 24.04, Firefox 123
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs e evidencias
+      description: Inclua logs, screenshots ou traces que ajudem na analise.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmacoes
+      options:
+        - label: Verifiquei issues existentes para evitar duplicidade.
+          required: true
+        - label: Li CONTRIBUTING.md e CODE_OF_CONDUCT.md.
+          required: true
+        - label: Este reporte nao contem dados sensiveis.
+          required: true
+

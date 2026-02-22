@@ -1,0 +1,61 @@
+name: Feature proposal
+description: Sugerir funcionalidade, melhoria ou evolucao de arquitetura.
+title: "[feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propostas claras aceleram decisao tecnica e priorizacao de roadmap.
+  - type: input
+    id: summary
+    attributes:
+      label: Resumo da proposta
+      placeholder: Ex. Suporte inicial a webhooks assinados para bots.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema que a proposta resolve
+      description: Qual dor real existe hoje?
+      placeholder: |
+        Contexto:
+        Impacto:
+        Quem e afetado:
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solucao proposta
+      description: Descreva a abordagem de forma objetiva.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Quais caminhos foram avaliados e por que nao foram escolhidos?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impactos esperados
+      description: Inclua impacto tecnico, operacional e de comunidade.
+      placeholder: |
+        - Privacidade:
+        - Seguranca:
+        - Complexidade:
+        - Risco:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmacoes
+      options:
+        - label: Esta proposta esta alinhada ao posicionamento etico do projeto.
+          required: true
+        - label: Esta proposta nao cria lock-in sem justificativa publica.
+          required: true
+        - label: Estou disposto a colaborar na discussao ou implementacao.
+          required: false
+
