@@ -70,6 +70,14 @@ Consulte `CONTRIBUTING.md` antes de abrir issues ou pull requests.
 
 Toda participação deve seguir `CODE_OF_CONDUCT.md`.
 
+## Patrocínio
+
+O Concórdia é um projeto open-source de interesse público e longo prazo.
+
+Se você quiser apoiar a continuidade técnica do projeto, use GitHub Sponsors:
+
+- https://github.com/sponsors/N1ghthill
+
 ## Licença
 
 Este projeto é distribuído sob a licença MIT. Veja `LICENSE`.

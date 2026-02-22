@@ -7,6 +7,7 @@ Obrigado por usar e contribuir com o Concórdia.
 - Dúvidas técnicas e de uso: abra uma issue usando os templates disponíveis.
 - Propostas de melhoria: use o template de feature proposal.
 - Melhorias de documentação: use o template de documentação.
+- Apoio financeiro ao projeto: https://github.com/sponsors/N1ghthill
 
 ## Segurança
 

@@ -8,7 +8,8 @@ Este formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e
 
 ### Added
 
-- Nenhuma mudanca registrada ainda.
+- Configuracao oficial de GitHub Sponsors em `.github/FUNDING.yml`.
+- Secao de patrocinio no `README.md`.
 
 ## [0.1.0] - 2026-02-22
 

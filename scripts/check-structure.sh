@@ -33,6 +33,7 @@ required_files=(
   CHANGELOG.md
   VERSIONING.md
   RELEASE.md
+  .github/FUNDING.yml
   .github/PULL_REQUEST_TEMPLATE.md
   .github/SUPPORT.md
   .github/dependabot.yml
